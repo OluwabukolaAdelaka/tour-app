@@ -3,6 +3,9 @@ import { RiCustomerService2Fill } from 'react-icons/ri';
 import { MdOutlineTravelExplore } from 'react-icons/md';
 
 const Book = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
   return (
     <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 py-16 p-4'>
         <div className='flex flex-col lg:col-span-2 justify-evenly'>
@@ -39,14 +42,14 @@ const Book = () => {
 
         <div>
             <div className='border text-center'>
-                <p className='py-2'>GET AN ADDITIONAL 10% OFF</p>
+                <p className='pt-2'>GET AN ADDITIONAL 10% OFF</p>
                 <p className='py-4'>12 HOURS LEFT</p>
                 <p className='bg-gray-800 text-gray-200 py-2'>BOOK NOW AND SAVE</p>
             </div>
-            <form className='w-full'>
+            <form onSubmit={handleSubmit} className='w-full'>
                 <div className='flex flex-col'>
                     <label>Destinations</label>
-                    <select className='border'>
+                    <select className='border rounded p-1'>
                         <option>Maldives</option>
                         <option>Borabora</option>
                         <option>KeyWest</option>
@@ -54,13 +57,16 @@ const Book = () => {
                         <option>Grande Antigua</option>
                     </select>
                 </div>
-                <div className='flex flex-col'>
-                    <label className='pt-2'>Check-In</label>
-                    <input type="date" className='border'/>
+                <div className='flex flex-col my-2'>
+                    <label>Check-In</label>
+                    <input type="date" className='border rounded p-1'/>
                 </div>
-                <div className='flex flex-col'>
-                    <label className='pt-2'>Check-Out</label>
-                    <input type="date" className='border'/>
+                <div className='flex flex-col my-4'>
+                    <label>Check-Out</label>
+                    <input type="date" className='border rounded p-1'/>
+                </div>
+                <div>
+                    <button className='w-full my-4'>Rates &amp; Availability</button>
                 </div>
             </form>
         </div>
