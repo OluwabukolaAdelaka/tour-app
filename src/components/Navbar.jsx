@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
   return (
-    <div className='flex items-center w-full justify-between px-4 h-20'>
+    <div className='flex items-center w-full justify-between px-4 h-20 absolute text-white z-10'>
         <div onClick={handleNav}>
             <h1 className={logo ? 'hidden' : 'block'}>BEACHES.</h1>
         </div>
