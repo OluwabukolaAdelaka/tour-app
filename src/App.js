@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Book from './components/Book';
 import View from './components/View';
 import Carousel from './components/Carousel';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
      <Book/>
      <View/>
      <Carousel/>
+     <Footer/>
     </div>
   );
 }
