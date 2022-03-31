@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Book from './components/Book';
 import View from './components/View';
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <Destinations/>
      <Book/>
      <View/>
+     <Carousel/>
     </div>
   );
 }
