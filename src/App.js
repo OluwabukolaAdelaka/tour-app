@@ -3,6 +3,7 @@ import Destinations from './components/Destinations';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Book from './components/Book';
+import View from './components/View';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
      <Hero/>
      <Destinations/>
      <Book/>
+     <View/>
     </div>
   );
 }
